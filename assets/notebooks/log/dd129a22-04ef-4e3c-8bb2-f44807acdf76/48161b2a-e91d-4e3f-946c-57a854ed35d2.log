@@ -1,0 +1,150 @@
+
+Cell 2:
+
+Cell 4:
+Current branch     : dev
+Current environment: dev
+
+Cell 5:
+
+Cell 6:
+
+Cell 7:
+Index(['ID', 'LONGDISTANCE', 'INTERNATIONAL', 'LOCAL', 'DROPPED', 'PAYMETHOD',
+       'LOCALBILLTYPE', 'LONGDISTANCEBILLTYPE', 'USAGE', 'RATEPLAN', 'GENDER',
+       'STATUS', 'CHILDREN', 'ESTINCOME', 'CAROWNER', 'AGE', 'CREDITCARD',
+       'DOB', 'ADDRESS_1', 'CITY', 'STATE', 'ZIP', 'ZIP4', 'LONGITUDE',
+       'LATITUDE', 'CHURN'],
+      dtype='object')
+
+Cell 8:
+
+Cell 10:
+
+Cell 11:
+
+Cell 12:
+
+Cell 13:
+
+Cell 14:
+
+Cell 15:
+
+Cell 16:
+
+Cell 17:
+              precision    recall  f1-score   support
+
+         0.0       0.98      0.94      0.96       168
+         1.0       0.92      0.97      0.95       115
+
+    accuracy                           0.95       283
+   macro avg       0.95      0.96      0.95       283
+weighted avg       0.96      0.95      0.95       283
+
+
+Cell 20:
+
+Cell 21:
+
+Cell 22:
+
+Cell 23:
+
+Cell 25:
+Deployment space with name churn-dev already exists
+Using the existing space
+
+Cell 26:
+
+Cell 27:
+Software specification "IBM Runtime 22.1 on R 36", identifiier runtime-22.1-r3.6
+Software specification "IBM Runtime 22.1 on Python 3.9", identifiier runtime-22.1-py3.9
+Software specification "IBM GPU Runtime 22.1 on Python 3.9", identifiier runtime-22.1-py3.9-cuda
+Software specification "GPU Runtime 22.2 on Python 3.10", identifiier runtime-22.2-py3.10-cuda
+Software specification "Runtime 22.2 on Python 3.10", identifiier runtime-22.2-py3.10
+Software specification "Runtime 22.2 on R 4.2", identifiier runtime-22.2-r4.2
+
+Cell 28:
+
+Cell 29:
+scikit-learn version: 1.1.1
+
+Cell 30:
+
+Cell 31:
+------------------------------------  --------------  ------------------------  ----------------
+ID                                    NAME            CREATED                   TYPE
+4373493b-cabc-43ab-91c4-5e4d8338fd05  churn_pipeline  2023-04-19T14:05:35.002Z  scikit-learn_1.1
+93de5940-ddbb-4294-a931-467eb8d0dcf6  churn_pipeline  2023-04-19T14:02:38.002Z  scikit-learn_1.1
+------------------------------------  --------------  ------------------------  ----------------
+
+Cell 32:
+
+Cell 33:
+This method is deprecated, please use get_model_id()
+
+
+
+#######################################################################################
+
+Synchronous deployment creation for uid: '4373493b-cabc-43ab-91c4-5e4d8338fd05' started
+
+#######################################################################################
+
+
+initializing
+
+Note: online_url is deprecated and will be removed in a future release. Use serving_urls instead.
+
+ready
+
+
+------------------------------------------------------------------------------------------------
+Successfully finished deployment creation, deployment_uid='c8180f81-40a2-40c1-9f81-efc68398b0eb'
+------------------------------------------------------------------------------------------------
+
+
+
+Cell 34:
+https://internal-nginx-svc.cpd-instance.svc.cluster.local:12443/ml/v4/deployments/c8180f81-40a2-40c1-9f81-efc68398b0eb/predictions
+
+Cell 36:
+Deployment 600bd053-4bc4-40ed-8ff0-1c6d162ba316 will be deleted
+
+Cell 38:
+Model 93de5940-ddbb-4294-a931-467eb8d0dcf6 will be deleted
+
+Cell 40:
+------------------------------------  --------------  ------------------------  ----------------
+ID                                    NAME            CREATED                   TYPE
+4373493b-cabc-43ab-91c4-5e4d8338fd05  churn_pipeline  2023-04-19T14:05:35.002Z  scikit-learn_1.1
+------------------------------------  --------------  ------------------------  ----------------
+------------------------------------  -------------------------  -----  ------------------------
+GUID                                  NAME                       STATE  CREATED
+c8180f81-40a2-40c1-9f81-efc68398b0eb  churn_pipeline_deployment  ready  2023-04-19T14:05:40.487Z
+------------------------------------  -------------------------  -----  ------------------------
+
+Cell 42:
+
+Cell 43:
+{
+  "predictions": [
+    {
+      "fields": [
+        "prediction",
+        "probability"
+      ],
+      "values": [
+        [
+          0.0,
+          [
+            1.0,
+            0.0
+          ]
+        ]
+      ]
+    }
+  ]
+}

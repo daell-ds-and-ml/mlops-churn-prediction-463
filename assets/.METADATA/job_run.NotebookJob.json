@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "name": "Notebook Job",
+    "asset_type": "job_run",
+    "origin_country": "us",
+    "asset_category": "USER",
+    "created_at": "2023-04-19T14:05:09Z",
+    "created": 1681913109329,
+    "asset_id": "job_run.NotebookJob",
+    "asset_attributes": [
+      "job_run"
+    ]
+  },
+  "entity": {
+    "job_run": {
+      "job_ref": "job.deploychurnpredictionmodel",
+      "job_name": "deploy-churn-prediction-model",
+      "job_type": "notebook",
+      "state": "Completed",
+      "isScheduledRun": false,
+      "configuration": {
+        "env_id": "rt222py",
+        "file_ref": "src/train-churn-prediction.ipynb",
+        "entrypoint": "",
+        "env_type": "notebook",
+        "env_variables": [],
+        "job_manager_id": "48161b2a-e91d-4e3f-946c-57a854ed35d2",
+        "notebook_job_output": {
+          "total_cells": 43,
+          "total_executed_cells": 43
+        },
+        "command_line_arguments": [],
+        "remote_runtime": {},
+        "runtime": {
+          "location": {
+            "id": "82934efd-f9ba-4638-9d0f-09da06aafa49",
+            "type": "runtimes_manager"
+          }
+        },
+        "is_scheduled_run": false,
+        "liveLogPath": "",
+        "notebook_output": "c84c3a3b-4109-4240-9422-8aba367a0475"
+      },
+      "project_name": "mlops-churn-prediction-463",
+      "runtime_job_id": "48161b2a-e91d-4e3f-946c-57a854ed35d2",
+      "last_state_change_timestamp": "2023-04-19T14:05:48Z",
+      "duration": 38
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "job_run",
+      "name": "job_run_notebook_output",
+      "description": "notebook output for job run job_run.NotebookJob",
+      "mime": "application/json",
+      "object_key": "job_run/notebooks/job_run.NotebookJob.ipynb",
+      "object_key_is_read_only": true,
+      "created_at": "2023-04-19T14:05:48Z",
+      "id": "c84c3a3b-4109-4240-9422-8aba367a0475",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    },
+    {
+      "asset_type": "job_run",
+      "name": "job_run.NotebookJob",
+      "description": "log for job run job_run.NotebookJob",
+      "mime": "application/json",
+      "data_partitions": 0,
+      "test_doc": 0,
+      "private_url": true,
+      "object_key": "notebooks/log/dd129a22-04ef-4e3c-8bb2-f44807acdf76/48161b2a-e91d-4e3f-946c-57a854ed35d2.log",
+      "object_key_is_read_only": false,
+      "is_partitioned": true,
+      "created_at": "2023-04-19T14:05:48Z",
+      "id": "e1b8493b-971c-4a8d-aa8a-3727efc3c835",
+      "is_managed": false,
+      "is_referenced": true,
+      "is_remote": false
+    }
+  ]
+}
